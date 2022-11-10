@@ -15,11 +15,11 @@
     <fieldset>
         <h1>Contact Information</h1>
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="user_full name" required> 
+            <input type="text" id="name" name="user_full name" placeholder="required"> 
             <label for="email">Email Address</label>
-            <input type="text" id="email" name="user_email address" required>
+            <input type="text" id="email" name="user_email address" placeholder="required" pattern=".+@globex\.com" size="30" required>
             <label for="phone">Phone Number</label>
-            <input tpye="text" id="phone" name="user_phone number">
+            <input tpye="text" id="phone" name="user_phone number" placeholder="required">
             <label for="adress">Street Address</label>
             <input type="text" id="address" name="user_street address">
             <label for=" city">City</label>
@@ -51,9 +51,9 @@
             <input type="checkbox" id="jave" value="" name="javascript newsletter">
         <h2>Newsletter format</h2>
             <label for="html">HTML</label>
-            <input type="radio" id="html" value="" name="html_format">
+            <input type="radio" id="html" value="html-format" name="format">
             <label for="plain">Plain text</label>
-            <input type="radio" id="plain" value="" name="plain_text_format">
+            <input type="radio" id="plain" value="plain_text" name="format">
         <h2>Other topics you'd like to hear about</h2>
         <textarea id="topics" name="topics"></textarea>
         <button type="submit">Sign Up</button>
