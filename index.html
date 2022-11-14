@@ -3,66 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Online Registation Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/selector.css">
+    <title>Online Registation Form</title>
   </head>
  
-<form action="index.html" method="post">
-    <legend>
+  <body>
+
+    <header>
         <h1> Signup for our Newsletter</h1>
         <p> Get the latest news on how your code is doing right in you inbox</p>
-    </legend>
-    <fieldset>
-        <h1>Contact Information</h1>
+    </header>
+
+ <main>
+
+    <form action="index.html" method="post">
+    <fieldset id="user">
+        <legend>Contact Information</legend>
             <label for="name">Full Name</label>
             <input type="text" id="name" name="user_full name" placeholder="required"> 
             <label for="email">Email Address</label>
             <input type="text" id="email" name="user_email address" placeholder="required">
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="user_phone number" placeholder="required">
-            <label for="adress">Street Address</label>
+            <label for="address">Street Address</label>
             <input type="text" id="address" name="user_street address">
             <label for=" city">City</label>
             <input type="text" id="city" name="user_city">
             <label for="state">State</label>
                 <select name="user-state" id="state">
                     <option value="">choose state</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="hamster">Hamster</option>
-                    <option value="parrot">Parrot</option>
-                    <option value="spider">Spider</option>
-                    <option value="goldfish">Goldfish</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
                 </select>
             <label for="zipcode">Zip Code</label>
             <input type="text" id="zipcode" name="user_zipcode">
     </fieldset>
 
-    <legend>
-        <h1>Newsletters</h1>  
-    </legend>
-    <fieldset>
-        <h2>Select the newletters you would like to receive</h2>
-            <label for="html">HTML News</label>
-            <input type="checkbox" id="html" value="" name="html newsletter">
-            <label for="css">CSS news</label>
-            <input type="checkbox" id+="css" value="" name="css newletter">
-            <label for="java">Javascript News</label>
-            <input type="checkbox" id="jave" value="" name="javascript newsletter">
-        <h2>Newsletter format</h2>
-            <label for="html">HTML</label>
-            <input type="radio" id="html" value="html-format" name="format">
-            <label for="plain">Plain text</label>
-            <input type="radio" id="plain" value="plain_text" name="format">
-        <h2>Other topics you'd like to hear about</h2>
-        <textarea id="topics" name="topics"></textarea>
-        <button type="submit">Sign Up</button>
+    <fieldset id="info">
+        <legend>Newsletters</legend>
+            <h2>Select the newletters you would like to receive</h2>
+            <div id="checks">
+                <div>
+                    <label for="html">HTML News</label>
+                    <input type="checkbox" id="html" value="html" name="newsletter">
+                </div>
+                <div>
+                    <label for="css">CSS news</label>
+                    <input type="checkbox" id+="css" value="css" name="newletter">
+                </div>
+                <div>
+                    <label for="java">Javascript News</label>
+                    <input type="checkbox" id="java" value="java" name="newsletter">
+                </div>
+            <h2>Newsletter format</h2>
+                <div>
+                    <label for="html">HTML</label>
+                    <input type="radio" id="html" value="html-format" name="format">
+                </div>
+                <div>
+                    <label for="plain">Plain text</label>
+                    <input type="radio" id="plain" value="plain_text" name="format">
+                </div>
+            </div>
+            <h2>Other topics you'd like to hear about</h2>
+            <textarea id="topics" name="topics"></textarea>
+            <button type="submit">Sign Up</button>
     </fieldset>
  </form>
   
  <footer>
     <h3>Copyright The Code Review</h3>
 </footer>
-
-
+        </main> 
+    </body>
 </html>
