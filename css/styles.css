@@ -41,7 +41,7 @@ background-color: #cbf7fa;
 color: black;
 }
 
-:placeholder-shown{
+input::placeholder{
     display: flex;
     text-align: right;
 }
@@ -70,6 +70,7 @@ button {
     background-color: #20B2AA;
     font-size: 18px;
     text-align: center;
+    cursor: pointer;
     font-weight: 700;
     border-radius: 5px;
     width: 100%;
