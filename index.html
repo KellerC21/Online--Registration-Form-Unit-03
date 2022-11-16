@@ -7,15 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/selector.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Online Registation Form</title>
   </head>
  
   <body>
 
     <header>
-        <h1> THE CODE REVIEW</h1>>
+        <h1>THE CODE REVIEW</h1>
     </header>
 
  <main>
@@ -25,7 +24,9 @@
 </div>
     <form action="index.html" method="post">
     <fieldset id="user">
-        <legend>Contact Information</legend>
+        <legend>
+            <h2>Contact Information</h2>
+        </legend>
             <label for="name">Full Name</label>
             <input type="text" id="name" name="user_full name" placeholder="required"> 
             <label for="email">Email Address</label>
@@ -96,8 +97,10 @@
     </fieldset>
 
     <fieldset id="info">
-        <legend>Newsletters</legend>
-            <h2>Select the newletters you would like to receive</h2>
+        <legend>
+            <h1>Newsletters</h1>
+        </legend>
+            <h3>Select the newletters you would like to receive</h3>
             <div id="checks">
                 <div>
                     <label for="html">HTML News</label>
@@ -111,8 +114,9 @@
                     <label for="java">Javascript News</label>
                     <input type="checkbox" id="java" value="java" name="newsletter">
                 </div>
-            <h2>Newsletter format</h2>
-                <div>
+            <h3>Newsletter format</h3>
+                <div id="radio">
+                    <div>
                     <label for="html">HTML</label>
                     <input type="radio" id="html" value="html-format" name="format">
                 </div>
@@ -121,7 +125,7 @@
                     <input type="radio" id="plain" value="plain_text" name="format">
                 </div>
             </div>
-            <h2>Other topics you'd like to hear about</h2>
+            <h3>Other topics you'd like to hear about</h3>
             <textarea id="topics" name="topics"></textarea>
             <button type="submit">Sign Up</button>
     </fieldset>
