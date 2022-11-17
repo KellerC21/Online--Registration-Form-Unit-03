@@ -7,65 +7,58 @@ body {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    margin: 0 1em;
+    margin: 0;
     padding: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 2em 0 2em;
 }
 
 header {
     background-color:#2d3945;
     color:#f2f2f2;
-    justify-content: center;
-    margin: 0;
 }
 
-.intro {
-    display: flex;
-    flex-direction: column;
+.intro{
     text-align: center;
-    border-bottom: 6px solid #2d3945;
 }
 
-.intro h1{
-    margin-top: 30px;
-    margin-bottom: 0;
-}
-
-.intro p{
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: o;
-    margin-bottom: 30;
-}
 fieldset {
     border: none;
 }
 
-legend h2{
+legend {
     font-weight: 700;
-    margin-top: 30px; 
-    margin-bottom: 0;
 }
 
 #user {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     font-weight: 700;
-    padding: 15px;
-    margin-bottom: 20px; 
-    border-bottom: 3px solid #2d3945;   
+    margin-bottom: 10px;
 }
 
+:required {
+    border: 5px solid red;
+    border-style: hidden;
+    color:red;
+}
 #zipcode{
     width: 50%;
     text-align: left;
     font-weight: 700;
-    margin-top:30px
     padding: 15px; 
 }
 
 input[type=text],
 input[type=tel],
 select {
-    width: 100%;
+    width: 75%;
     height: 45px;
     box-sizing: border-box;
     border-radius: 8px;
@@ -79,8 +72,13 @@ input::placeholder{
     font-weight: 400;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid rgb(45, 43, 65);
+}
+
 #info{
-    padding: 15px;
     margin-bottom: 20px;
     text-align: left;
     font-size: 400;
@@ -93,13 +91,12 @@ input::placeholder{
     font-weight: 400;  
 }
 
-.topics{
+#topics {
     box-sizing: border-box;
-    color: #686666;
-    padding: 15px;
-    margin-bottom: 20px;
+    color: #708186;
     cursor: pointer;
     width: 100%;
+    height: 70px;
 }
 
 button {
@@ -123,28 +120,52 @@ button {
     color: #D3D3D3;
   }
 
-  @media (min-width: 768px) {
+  @media {
 
-    main {
+
+    body {
+        min-width: 768px;
         display: flex;
         flex-direction: column;
-        text-align: left;
-        width: 100%;
-        margin: 0 10px;
-        padding: 0px;
     }
 
+    main {
+        text-align: left;
+        width: 50%;
+        margin-right: 300%;
+        margin-left: 30%;
+    }
+
+    header {
+        background-color:#2d3945;
+        color:#f2f2f2;
+        text-align: center;
+    }
+
+   
     #user{
         text-align: left;
         margin: 20px;
         margin-bottom: 20px;
         font-weight: 700;
     }
+    
+    #zipcode{
+        width: 50%;
+        text-align: left;
+        font-weight: 700;
+        padding: 15px; 
+    }
+ }
 
-
-
-
-   
-
-
+  #top-bar {
+    height: 4px;
+    border-top: 5px solid rgb(0 0 0);
+    border-bottom: 2px solid rgb(0 0 0);
+    width: 95%;
+  }
+  
+  #bottom-bar {
+    border: 2px rgb(45, 43, 65) solid;
+    width: 95%;
   }
