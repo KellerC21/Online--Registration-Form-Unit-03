@@ -33,12 +33,12 @@
             <label for="name">Full Name</label>
             <input type="text" id="name" name="user_full name" placeholder="required"> 
             <label for="email">Email Address</label>
-            <input type="text" id="email" name="user_email address" placeholder="required" required="email must containan an at sign (@) and a period (.)">
+            <input type="text" id="email" name="user_email address" placeholder="required" >
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="user_phone number" placeholder="required">
             <label for="address">Street Address</label>
             <input type="text" id="address" name="user_street address">
-            <label for=" city">City</label>
+            <label for="city">City</label>
             <input type="text" id="city" name="user_city">
             <label for="state">State</label>
                 <select name="user-state" id="state">
@@ -108,20 +108,21 @@
             <h3>Select the newletters you would like to receive</h3>
             <div id="checks">
                 <div>
-                    <label for="html">HTML News</label>
-                    <input type="checkbox" id="html" value="html" name="newsletter">
+                    <label for="news">HTML News</label>
+                    <input type="checkbox" id="news" value="html" name="newsletter">
                 </div>
                 <div>
                     <label for="css">CSS news</label>
-                    <input type="checkbox" id+="css" value="css" name="newletter">
+                    <input type="checkbox" id="css" value="css" name="newletter">
                 </div>
                 <div>
                     <label for="java">Javascript News</label>
                     <input type="checkbox" id="java" value="java" name="newsletter">
                 </div>
+            </div>
             <h3>Newsletter format</h3>
                 <div id="radio">
-                    <div>
+                <div>
                     <label for="html">HTML</label>
                     <input type="radio" id="html" value="html-format" name="format">
                 </div>
