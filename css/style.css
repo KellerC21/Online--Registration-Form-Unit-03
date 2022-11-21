@@ -120,26 +120,10 @@ button {
 
   @media only screen and (min-width: 768px){
 
-
-    body {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        width: 50%;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        background-color:#2d3945;
-        color:#f2f2f2;
-        text-align: center;
+    main{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .user{
@@ -148,24 +132,23 @@ button {
         flex-wrap: wrap;
         text-align: left;
         margin: 30px;
-       
         font-weight: 700;
     }
     
-
     .user input,
     select {
         align-self: flex-end;
         width: 60%;
         flex-direction: column;
-       
+        border-radius: 5px;
+        margin: 7px;
     }
 
     .user label {
         align-self: flex-start;
         width: 30%;
         flex-direction: column;
-
+        margin: 7px;
     }
    
     #zipcode{
