@@ -36,7 +36,7 @@ legend {
     font-weight: 700;
 }
 
-#user {
+.user {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -76,7 +76,7 @@ textarea:focus {
     outline: 3px solid rgb(45, 43, 65);
 }
 
-#info{
+.info{
     margin-bottom: 20px;
     text-align: left;
     font-size: 400;
@@ -118,7 +118,7 @@ button {
     color: #D3D3D3;
   }
 
-  @media (min-width: 768px){
+  @media only screen and (min-width: 768px){
 
 
     body {
@@ -142,22 +142,39 @@ button {
         text-align: center;
     }
 
-   
-    #user{
+    .user{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         text-align: left;
-        margin: 20px;
-        margin-bottom: 20px;
+        margin: 30px;
+       
         font-weight: 700;
     }
     
+
+    .user input,
+    select {
+        align-self: flex-end;
+        width: 60%;
+        flex-direction: column;
+       
+    }
+
+    .user label {
+        align-self: flex-start;
+        width: 30%;
+        flex-direction: column;
+
+    }
+   
     #zipcode{
-        width: 50%;
+        width: 25%;
         text-align: left;
         font-weight: 700;
         padding: 15px; 
     }
+
  }
 
   #top-bar {
