@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    
     width: 100%;
     margin: 0;
     padding: 0px;
@@ -53,7 +54,7 @@ legend {
 input[type=text],
 input[type=tel],
 select {
-    width: 75%;
+    width: 100%;
     height: 45px;
     box-sizing: border-box;
     border-radius: 8px;
@@ -71,7 +72,7 @@ input:focus,
 select:focus,
 textarea:focus {
     transition: all 0.5s ease-out;
-    background-color: #708186;
+    background-color: #fbfeff;
     outline: 3px solid rgb(45, 43, 65);
 }
 
@@ -117,23 +118,25 @@ button {
     color: #D3D3D3;
   }
 
-  @media {
+  @media (min-width: 768px){
 
 
     body {
-        min-width: 768px;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     main {
+        display: flex;
+        flex-direction: column;
         text-align: left;
         width: 50%;
-        margin-right: 300%;
-        margin-left: 30%;
     }
 
     header {
+        display: flex;
+        flex-direction: column;
         background-color:#2d3945;
         color:#f2f2f2;
         text-align: center;
@@ -141,6 +144,8 @@ button {
 
    
     #user{
+        display: flex;
+        flex-direction: column;
         text-align: left;
         margin: 20px;
         margin-bottom: 20px;
