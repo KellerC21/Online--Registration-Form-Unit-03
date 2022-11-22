@@ -90,7 +90,11 @@ textarea:focus {
     font-weight: 400;  
 }
 
-#topics {
+#radio{
+    margin-bottom: 10px;
+}
+
+#topics { 
     box-sizing: border-box;
     color: #708186;
     cursor: pointer;
